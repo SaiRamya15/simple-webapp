@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git clone 'https://github.com/SaiRamya15/simple-webapp.git'
+               git branch: "main", 
+                credentialsId: 'd24121e7-c5e6-413f-a8c4-890f7eeee1fc', 
+                url: 'https://github.com/SaiRamya15/simple-webapp.git'
             }
         }
 
