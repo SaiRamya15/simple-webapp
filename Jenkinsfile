@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/SaiRamya15/simple-webapp.git'
+                git clone 'https://github.com/SaiRamya15/simple-webapp.git'
             }
         }
 
