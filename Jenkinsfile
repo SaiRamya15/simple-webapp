@@ -20,8 +20,8 @@ pipeline {
             steps {
                 script {
                     def workspace = env.WORKSPACE
-                    bat "mkdir -p ${workspace}/deploy"
-                    bat "cp -r html/* ${workspace}/deploy/"
+                    bat "mkdir \"${workspace}\\deploy\""
+                    bat "xcopy /E /I /Y html \"${workspace}\\deploy\\\""
                 }
             }
         }
