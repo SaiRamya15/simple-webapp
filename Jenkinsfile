@@ -20,8 +20,8 @@ pipeline {
             steps {
                 script {
                     def workspace = env.WORKSPACE
-                    sh "mkdir -p ${workspace}/deploy"
-                    sh "cp -r html/* ${workspace}/deploy/"
+                    bat "mkdir -p ${workspace}/deploy"
+                    bat "cp -r html/* ${workspace}/deploy/"
                 }
             }
         }
